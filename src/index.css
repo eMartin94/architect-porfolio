@@ -11,6 +11,7 @@
 }
 body {
   font-family: 'Space Mono', monospace;
+  font-size: 16px;
   min-height: 100vh;
 }
 
@@ -124,11 +125,19 @@ body {
   transform: scaleX(1);
 }
 
+.title {
+  /* color: #15141b; */
+  text-shadow: 4px 4px 0px #b0edcc, 8px 8px 0px rgba(21, 20, 27, 0.25);
+}
+.photo {
+  box-shadow: 4px 4px 0px #b0edcc, 8px 8px 0px rgba(21, 20, 27, 0.25);
+}
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1;
+  /* background-color: #b0edcc; */
 }
 ::-webkit-scrollbar-thumb {
   background-color: #22202b;

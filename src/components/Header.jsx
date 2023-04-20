@@ -27,12 +27,16 @@ const Header = ({ lang, setLanguage }) => {
   return (
     <>
       <header
-        className={`${styles.paddingX} ${
+        className={`${
           scrolled ? 'bg-white shadow-md' : 'bg-transparent'
-        } flex relative w-full py-4 justify-center transition-all duration-500 items-center`}
+        } flex fixed top-0 w-full px-4 md:px-12 py-4 justify-center transition-all duration-500 items-center`}
       >
         <div className='flex w-full max-w-7xl justify-between'>
-          <h1 className='z-10 pt-1'>milogo</h1>
+          <h1 className='z-10 pt-1'>
+            <NavLink to='/'>
+              <b>carlaMe_</b>
+            </NavLink>
+          </h1>
           <div className='flex w-full justify-end gap-3'>
             <nav className='sm:flex hidden gap-4'>
               <ul className='flex gap-4'>
@@ -43,7 +47,7 @@ const Header = ({ lang, setLanguage }) => {
                       className={({ isActive }) =>
                         isActive
                           ? 'nav-list_item isActive opacity-100'
-                          : 'nav-list_item opacity-50 hover:opacity-100'
+                          : 'nav-list_item opacity-70 hover:opacity-100'
                       }
                     >
                       {link.name}
@@ -88,7 +92,7 @@ const Header = ({ lang, setLanguage }) => {
                   className={({ isActive }) =>
                     isActive
                       ? 'nav-list_item isActive opacity-100 text-2xl'
-                      : 'nav-list_item opacity-50 hover:opacity-100 text-2xl'
+                      : 'nav-list_item opacity-70 hover:opacity-100 text-2xl'
                   }
                   onClick={() => setToggle(false)}
                 >

@@ -14,7 +14,10 @@ export default {
       },
       screens: {
         xs: '450px',
-      }
+      },
+      backgroundImage: {
+        "gradient-hero-dark": " url('/src/assets/bg-image.svg')",
+      },
     },
   },
   plugins: [],
