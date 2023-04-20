@@ -14,7 +14,7 @@ function App() {
     <>
       {/* <BrowserRouter> */}
       <div className='relative z-0'>
-        <div className='fixed bg-white w-full'>
+        <div className='fixed w-full'>
           <Header lang={language} setLanguage={setLanguage} />
         </div>
         <Routes>

@@ -14,11 +14,97 @@ body {
   min-height: 100vh;
 }
 
-.nav-item {
+.btn-menu {
+  /* padding-top: 5px; */
+  position: relative;
+  /* display: inline-block; */
+  /* float: right; */
+  padding-left: 8px;
+  /* padding-top: 15px; */
+  /* margin-top: 26px; */
+  transition: all 300ms ease-out;
+}
+
+.menu-icon {
+  padding-top: 5px;
+  height: 24px;
+  width: 30px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  display: block;
+}
+
+.menu-icon__line {
+  height: 2px;
+  width: 30px;
+  display: block;
+  background-color: #15141b;
+  margin-bottom: 7px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  transition: transform 0.2s ease;
+}
+
+.menu-icon__line-left {
+  width: 15px;
+  transition: all 200ms linear;
+}
+.menu-icon__line-right {
+  width: 15px;
+  float: right;
+  transition: all 200ms linear;
+}
+.menu-icon:hover .menu-icon__line-left,
+.menu-icon:hover .menu-icon__line-right {
+  width: 30px;
+}
+
+.menu-icon.isActive .menu-icon__line {
+  width: 30px;
+  transform: translate(0px, 0px) rotate(-45deg);
+}
+
+.menu-icon.isActive .menu-icon__line-left {
+  width: 15px;
+  transform: translate(2px, 4px) rotate(45deg);
+}
+
+.menu-icon.isActive .menu-icon__line-right {
+  width: 15px;
+  float: right;
+  transform: translate(-3px, -3.5px) rotate(45deg);
+}
+.menu-icon.isActive:hover .menu-icon__line-left,
+.menu-icon.isActive:hover .menu-icon__line-right {
+  width: 10px;
+  transform: translate(-1px, -1px) rotate(45deg);
+}
+
+.backg {
+  position: fixed;
+  top: 44px;
+  right: 44px;
+  aspect-ratio: 1/1;
+  translate: 50% -50%;
+  height: 88px;
+  background: #15141b;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 700ms;
+}
+.backg.isActive {
+  background: #fff;
+  height: 300vh;
+  filter: blur(5px);
+  opacity: 0.98;
+}
+
+.nav-list_item {
   position: relative;
   padding: 5px 0;
 }
-.nav-item:after {
+.nav-list_item:after {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -31,10 +117,10 @@ body {
   display: block;
   transform: scaleX(0);
 }
-.nav-item.isActive:after {
+.nav-list_item.isActive:after {
   transform: scaleX(1);
 }
-.nav-item:hover:after {
+.nav-list_item:hover:after {
   transform: scaleX(1);
 }
 
