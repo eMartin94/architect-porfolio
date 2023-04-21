@@ -24,7 +24,10 @@ function App() {
           <Route path='/drawing' element={<Drawing lang={language} />} />
           <Route path='/contact' element={<Contact lang={language} />} />
         </Routes>
-        <Footer />
+        <hr />
+        <div className='flex justify-center items-center h-full sm:h-20 w-full'>
+          <Footer lang={language} />
+        </div>
       </div>
       {/* </BrowserRouter> */}
     </>

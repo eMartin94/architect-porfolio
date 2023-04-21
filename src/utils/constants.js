@@ -359,6 +359,17 @@ const projectText = {
       },
     ],
   },
+};
+
+const footerText = {
+  en: {
+    textSocial: 'Follow me',
+    textCopyright: 'All rights reserved',
+  },
+  es: {
+    textSocial: 'Sígueme en',
+    textCopyright: 'Todos los derechos reservados',
+  },
 }
 
-export { navLinks, lastProjects, homeText, aboutText, projectText }
+export { navLinks, lastProjects, homeText, aboutText, projectText, footerText }
