@@ -49,6 +49,7 @@ const Header = ({ lang, setLanguage }) => {
                           ? 'nav-list_item isActive opacity-100'
                           : 'nav-list_item opacity-70 hover:opacity-100'
                       }
+                      onClick={() => window.scrollTo(0, 0)}
                     >
                       {link.name}
                     </NavLink>

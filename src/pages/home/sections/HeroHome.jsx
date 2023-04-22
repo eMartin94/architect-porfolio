@@ -1,11 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { homeText } from '../../../utils/constants';
-import { styles } from '../../../styles/styles';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const HeroHome = ({ lang }) => {
-  const { description, quote, author, img, textButton } = homeText[lang];
+  const { description, quote, author } = homeText[lang];
   const triggerRef = useRef(null);
 
   useEffect(() => {
@@ -80,7 +79,7 @@ const HeroHome = ({ lang }) => {
 
   return (
     <section className='section-hero'>
-      <header>
+      <main>
         <div className='upper-container'>
           <h1 className=' text-[100px] xs:text-[150px] sm:text-[200px] md:text-[250px] lg:text-[320px] xl:text-[450px] drop-shadow-[4px_4px_0_#b0edcc]  md:drop-shadow-[8px_8px_0_#b0edcc]'>
             carla
@@ -92,17 +91,19 @@ const HeroHome = ({ lang }) => {
         <div className='transition' ref={triggerRef}>
           <div className='lower-container'>
             <div className='box-quote flex justify-center '>
-              <p className='flex flex-wrap w-1/3 text-[8px] xs:text[10px] text-center px-4'>
+              <p className='flex flex-wrap w-1/3 text-[8px] xs:text-[10px] text-center px-4'>
                 {quote}
               </p>
             </div>
-            <div className='box-author p-10 sm:p-4'>
+            <div className='box-author p-6 sm:p-4'>
               {' '}
-              <span className='text-[8px] text-center'>{author}</span>
+              <span className='text-[6px] sm:text-[8px] text-center'>
+                {author}
+              </span>
             </div>
           </div>
         </div>
-      </header>
+      </main>
     </section>
   );
 };

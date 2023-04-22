@@ -3,20 +3,20 @@ import { img1, img10, img2, img3, img4, img5, photo } from '../assets';
 const navLinks = {
   en: {
     links: [
-      { to: '/', name: 'Home' },
-      { to: '/about', name: 'About' },
-      { to: '/project', name: 'Projects' },
-      { to: '/drawing', name: 'Drawings' },
-      { to: '/contact', name: 'Contact' },
+      { to: '/', id: 'home', name: 'Home' },
+      { to: '/about', id: 'about', name: 'About' },
+      { to: '/project', id: 'project', name: 'Projects' },
+      { to: '/drawing', id: 'drawing', name: 'Drawings' },
+      { to: '/contact', id: 'contact', name: 'Contact' },
     ],
   },
   es: {
     links: [
-      { to: '/', name: 'Inicio', },
-      { to: '/about', name: 'Sobre mí', },
-      { to: '/project', name: 'Proyectos', },
-      { to: '/drawing', name: 'Dibujos' },
-      { to: '/contact', name: 'Contacto' },
+      { to: '/', id: 'home', name: 'Inicio', },
+      { to: '/about', id: 'about', name: 'Sobre mí', },
+      { to: '/project', id: 'project', name: 'Proyectos', },
+      { to: '/drawing', id: 'drawing', name: 'Dibujos' },
+      { to: '/contact', id: 'contact', name: 'Contacto' },
     ],
   },
 };
@@ -26,13 +26,11 @@ const homeText = {
     description: 'Designing quality spaces',
     quote: '"The architecture should be a response to the needs of society and not a selfish expression of personal tastes."',
     author: 'César Pelli',
-    img: photo,
   },
   es: {
     description: 'Diseñando espacios de calidad',
     quote: '"La arquitectura debe ser una respuesta a las necesidades de la sociedad y no una expresión egoísta de los gustos personales."',
     author: 'César Pelli',
-    img: photo,
   },
 }
 
@@ -56,7 +54,7 @@ const lastProjects = {
         img: img3,
       },
     ],
-    textButton: 'see more',
+    textButton: 'See more',
   },
   es: {
     title: "Últimos Proyectos",
@@ -77,7 +75,7 @@ const lastProjects = {
         img: img3,
       },
     ],
-    textButton: 'ver más',
+    textButton: 'Ver más',
   },
 };
 
@@ -85,7 +83,8 @@ const aboutText = {
   en: {
     title: 'about me',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloremque modi laborum, voluptatibus fugit molestias necessitatibus molestiae maiores quisquam omnis error a cupiditate alias optio nihil nemo expedita vero repellendus?',
-    textButton: 'download',
+    img: photo,
+    textButton: 'Download',
     subTitle1: 'skills',
     skills: [
       {
@@ -141,7 +140,8 @@ const aboutText = {
   es: {
     title: 'sobre mi',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloremque modi laborum, voluptatibus fugit molestias necessitatibus molestiae maiores quisquam omnis error a cupiditate alias optio nihil nemo expedita vero repellendus?',
-    textButton: 'descargar',
+    img: photo,
+    textButton: 'Descargar',
     subTitle1: 'skills',
     skills: [
       {

@@ -28,9 +28,7 @@ const LastWorks = ({ lang }) => {
           ))}
         </div>
         <div className='flex justify-center items-center mt-5'>
-          <button className='btn hover:bg-transparent border-2 border-transparent hover:border-primary bg-primary text-white hover:text-primary px-5 py-2 transition-all duration-300 ease-in-out'>
-            {textButton}
-          </button>
+          <button className={`${styles.button}`}>{textButton}</button>
         </div>
       </div>
     </>
