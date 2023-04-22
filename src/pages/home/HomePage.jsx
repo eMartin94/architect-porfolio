@@ -4,7 +4,7 @@ import LastWorks from './sections/LastWorks';
 
 const HomePage = ({ lang }) => {
   return (
-    <div>
+    <div className=''>
       <HeroHome lang={lang} />
       <LastWorks lang={lang} />
     </div>
