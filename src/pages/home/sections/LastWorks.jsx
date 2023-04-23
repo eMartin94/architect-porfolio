@@ -2,9 +2,11 @@ import React from 'react';
 import { lastProjects } from '../../../utils/constants';
 import { SectionWrapper } from '../../../hoc';
 import { styles } from '../../../styles/styles';
+import { Link } from 'react-router-dom';
 
 const LastWorks = ({ lang }) => {
   const { title, projects, textButton } = lastProjects[lang];
+
   return (
     <>
       <div className='flex flex-col gap-4 justify-center items-center'>
@@ -27,8 +29,15 @@ const LastWorks = ({ lang }) => {
             </div>
           ))}
         </div>
+
         <div className='flex justify-center items-center mt-5'>
-          <button className={`${styles.button}`}>{textButton}</button>
+          <Link
+            to={'/project'}
+            className={`${styles.button}`}
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            {textButton}
+          </Link>
         </div>
       </div>
     </>

@@ -4,7 +4,7 @@ import GalleryProject from './sections/GalleryProject';
 
 const ProjectPage = ({ lang }) => {
   return (
-    <div>
+    <div id='project'>
       <HeroProject lang={lang} />
       <GalleryProject lang={lang} />
     </div>

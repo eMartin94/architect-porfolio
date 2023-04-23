@@ -1,41 +1,30 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {} from 'react-icons';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { navLinks } from '../utils/constants';
-import { styles } from '../styles/styles';
-import { AiOutlineMenu } from 'react-icons/ai';
+import { useScrolled } from '../hooks/useScrolled';
 
 const Header = ({ lang, setLanguage }) => {
   const { links } = navLinks[lang];
   const [toggle, setToggle] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const scrolled = useScrolled();
 
   const handleChange = () => {
     setToggle(!toggle);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTopY = window.scrollY;
-      scrollTopY > 100 ? setScrolled(true) : setScrolled(false);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <>
       <header
         className={`${
-          scrolled ? 'bg-white shadow-md' : 'bg-transparent'
+          scrolled ? 'bg-white bg-opacity-95 shadow-md' : 'bg-transparent'
         } flex fixed top-0 w-full px-4 md:px-12 py-4 justify-center transition-all duration-500 items-center`}
       >
         <div className='flex w-full max-w-7xl justify-between'>
           <h1 className='z-10 pt-1'>
-            <NavLink to='/'>
+            <Link to='/' onClick={() => window.scrollTo(0, 0)}>
               <b>carlaMe_</b>
-            </NavLink>
+            </Link>
           </h1>
           <div className='flex w-full justify-end gap-3'>
             <nav className='sm:flex hidden gap-4'>
@@ -95,7 +84,9 @@ const Header = ({ lang, setLanguage }) => {
                       ? 'nav-list_item isActive opacity-100 text-2xl'
                       : 'nav-list_item opacity-70 hover:opacity-100 text-2xl'
                   }
-                  onClick={() => setToggle(false)}
+                  onClick={() => {
+                    setToggle(false), window.scrollTo(0, 0);
+                  }}
                 >
                   {link.name}
                 </NavLink>

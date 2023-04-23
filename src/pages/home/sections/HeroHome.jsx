@@ -81,7 +81,7 @@ const HeroHome = ({ lang }) => {
     <section className='section-hero'>
       <main>
         <div className='upper-container'>
-          <h1 className=' text-[100px] xs:text-[150px] sm:text-[200px] md:text-[250px] lg:text-[320px] xl:text-[450px] drop-shadow-[4px_4px_0_#b0edcc]  md:drop-shadow-[8px_8px_0_#b0edcc]'>
+          <h1 className='text-img text-[100px] xs:text-[150px] sm:text-[200px] md:text-[250px] lg:text-[320px] xl:text-[450px] drop-shadow-[4px_4px_0_#b0edcc]  md:drop-shadow-[8px_8px_0_#b0edcc]'>
             carla
           </h1>
           <p className='box-description text-[14px] xs:text-[18px] sm:text-[20px] md:text-[30px] lg:text-[40px] xl:text-[60px] mt-5'>

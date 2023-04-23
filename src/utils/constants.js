@@ -3,20 +3,20 @@ import { img1, img10, img2, img3, img4, img5, photo } from '../assets';
 const navLinks = {
   en: {
     links: [
-      { to: '/', id: 'home', name: 'Home' },
-      { to: '/about', id: 'about', name: 'About' },
-      { to: '/project', id: 'project', name: 'Projects' },
-      { to: '/drawing', id: 'drawing', name: 'Drawings' },
-      { to: '/contact', id: 'contact', name: 'Contact' },
+      { to: '/', name: 'Home' },
+      { to: '/about', name: 'About' },
+      { to: '/project', name: 'Projects' },
+      { to: '/drawing', name: 'Drawings' },
+      { to: '/contact', name: 'Contact' },
     ],
   },
   es: {
     links: [
-      { to: '/', id: 'home', name: 'Inicio', },
-      { to: '/about', id: 'about', name: 'Sobre mí', },
-      { to: '/project', id: 'project', name: 'Proyectos', },
-      { to: '/drawing', id: 'drawing', name: 'Dibujos' },
-      { to: '/contact', id: 'contact', name: 'Contacto' },
+      { to: '/', name: 'Inicio', },
+      { to: '/about', name: 'Sobre mí', },
+      { to: '/project', name: 'Proyectos', },
+      { to: '/drawing', name: 'Dibujos' },
+      { to: '/contact', name: 'Contacto' },
     ],
   },
 };
@@ -84,54 +84,60 @@ const aboutText = {
     title: 'about me',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloremque modi laborum, voluptatibus fugit molestias necessitatibus molestiae maiores quisquam omnis error a cupiditate alias optio nihil nemo expedita vero repellendus?',
     img: photo,
-    textButton: 'Download',
+    textButtonIn: 'Download',
+    textButtonOut: 'Downloading...',
     subTitle1: 'skills',
     skills: [
       {
         name: 'autocad',
         icon: '',
+        value: '85',
       },
       {
         name: 'sketchup',
         icon: '',
+        value: '75',
       },
       {
         name: 'revit',
         icon: '',
+        value: '60',
       },
       {
         name: 'rhino',
         icon: '',
+        value: '60',
       },
       {
         name: '3DS max',
         icon: '',
+        value: '50',
       },
     ],
     subTitle2: 'course',
     courses: [
       {
-        name: 'course 1',
+        name: 'This is the course 1',
         date: 'may 2023 - july 2023',
         icon: '',
       },
       {
-        name: 'course 2',
+        name: 'This is the course 2',
         date: 'may 2023 - july 2023',
         icon: '',
       },
       {
-        name: 'course 3',
+        name: 'This is the course 3',
         date: 'may 2023 - july 2023',
         icon: '',
       },
       {
-        name: 'course 4',
+        name: 'This is the course 4',
         date: 'may 2023 - july 2023',
         icon: '',
       },
       {
-        name: 'course 5',
+        name: 'This is the course 5',
         date: 'may 2023 - july 2023',
         icon: '',
       },
@@ -141,54 +147,60 @@ const aboutText = {
     title: 'sobre mi',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloremque modi laborum, voluptatibus fugit molestias necessitatibus molestiae maiores quisquam omnis error a cupiditate alias optio nihil nemo expedita vero repellendus?',
     img: photo,
-    textButton: 'Descargar',
+    textButtonIn: 'Descargar',
+    textButtonOut: 'Descargando...',
     subTitle1: 'skills',
     skills: [
       {
         name: 'autocad',
         icon: '',
+        value: '85',
       },
       {
         name: 'sketchup',
         icon: '',
+        value: '75',
       },
       {
         name: 'revit',
         icon: '',
+        value: '60',
       },
       {
         name: 'rhino',
         icon: '',
+        value: '60',
       },
       {
         name: '3DS max',
         icon: '',
+        value: '50',
       },
     ],
     subTitle2: 'cursos',
     courses: [
       {
-        name: 'curso 1',
+        name: 'Este es el curso 1',
         date: 'mayo 2023 - julio 2023',
         icon: '',
       },
       {
-        name: 'curso 2',
+        name: 'Este es el curso 2',
         date: 'mayo 2023 - julio 2023',
         icon: '',
       },
       {
-        name: 'curso 3',
+        name: 'Este es el curso 3',
         date: 'mayo 2023 - julio 2023',
         icon: '',
       },
       {
-        name: 'curso 4',
+        name: 'Este es el curso 4',
         date: 'mayo 2023 - julio 2023',
         icon: '',
       },
       {
-        name: 'curso 5',
+        name: 'Este es el curso 5',
         date: 'mayo 2023 - julio 2023',
         icon: '',
       },
